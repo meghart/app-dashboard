@@ -1,0 +1,47 @@
+// MARGINS
+@each $margin in 10, 15, 20, 25, 50, 75, 100, 125, 150 {
+    .margin-top-#{$margin} {
+        margin-top: #{$margin}px;
+    }
+    .margin-bottom-#{$margin} {
+        margin-bottom: #{$margin}px;
+    }
+    @media (min-width: 768px) {
+        .margin-left-#{$margin} {
+            margin-left: #{$margin}px;
+        }
+        .margin-right-#{$margin} {
+            margin-right: #{$margin}px;
+        }
+    }
+}
+
+// ALIGNMENT
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+// SIDEBAR
+.sidebar {
+    background-color: #dcdcdc;
+    height: 100%;
+    padding: 25px 0 10px 0;
+    position: fixed;
+    
+    & li {
+        list-style-type: none;
+        margin-bottom: 25px;
+        
+        & > a {
+            color: #333;
+            text-decoration: none;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+}
