@@ -119,6 +119,10 @@
   float: left;
   text-align: left; }
 
+.spacer {
+  display: block;
+  padding-top: 75px; }
+
 .bootstrap-sidebar {
   background-color: #ccc;
   display: block;
@@ -148,6 +152,10 @@
 .navbar-brand {
   position: fixed;
   left: 25px; }
+
+.settings-user {
+  position: fixed;
+  right: 75px; }
 
 .navigation {
   background-color: #181818;
@@ -252,15 +260,17 @@
   width: 0;
   position: relative;
   left: 0;
-  top: 50px;
+  top: -200px;
   -webkit-transform: rotate(360deg);
   z-index: 99; }
 
+@media (max-width: 550px) {
+  .triangle {
+    display: none; } }
 .left-panel {
   background: #333;
   height: 100%;
-  padding-top: 500px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 25%; }
@@ -268,14 +278,16 @@
 .login-panel {
   background: linear-gradient(-180deg, #ECE9E6 0%, #FFFFFF 100%);
   height: 100%;
-  padding-top: 475px;
-  position: fixed;
+  position: absolute;
   left: 25%;
   top: 0;
   width: 75%; }
 
 @media (max-width: 979px) {
   .left-panel img[alt~="goverlan"] {
+    display: none; } }
+@media (max-width: 400px) {
+  .left-panel img[alt~="icon"] {
     display: none; } }
 .form-error {
   color: red;
