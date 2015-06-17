@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Base elements -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="application-name" content="Goverlan Cloud" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <!-- Font family -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,300,600" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <!--Navigation-->
+    <div class="navigation">
+        <nav class="container">
+            <div class="row">
+                <div class="nine columns left">
+                    <a class="navbar-brand" href="#"><img src="img/cloud.png" height="31" alt="cloud" /></a>
+                </div>
+                <div class="three columns right">
+                    <ul>
+                        <li><a href="#"><img src="img/settings.png" height="31" alt="settings" /></a></li>
+                        <li><a href="#"><img src="img/avatar.png" height="31" alt="user" /></a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <div class="menu-hamburger"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="#">Behavior &amp; Settings</a></li>
+            <li><a href="#">Auditing</a></li>
+            <li><a href="#">Discovery &amp; Mobile Devices</a></li>
+        </ul>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- PLACE CONTENT HERE -->
+    </div>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').on('click', function(){
+                $('.sidebar').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
